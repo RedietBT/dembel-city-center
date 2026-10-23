@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #031955;
+  --color-brand-royal: #0E4C92;
+  --color-brand-teal: #1882B2;
+  --color-brand-gold: #C9A24B;
+  --color-brand-gold-light: #DFBE72;
+  --color-brand-bg: #F6F8FC;
+  --color-brand-card: #FFFFFF;
+  --color-brand-text: #1B2638;
+  --color-brand-muted: #64748B;
+  --color-brand-border: #E2E8F0;
+  
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --background: #F6F8FC;
+  --foreground: #1B2638;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom smooth scroll and scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-dark {
+  background: rgba(3, 25, 85, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C9A24B 0%, #DFBE72 50%, #C9A24B 100%);
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #031955 0%, #0E4C92 100%);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 80% 20%, rgba(24, 130, 178, 0.25) 0%, transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(201, 162, 75, 0.15) 0%, transparent 40%),
+              linear-gradient(180deg, #031955 0%, #092C6E 100%);
+}
+
+/* Subtle badge pulse */
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 3s ease-in-out infinite;
+}

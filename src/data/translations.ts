@@ -1,0 +1,212 @@
+export type Language = 'en' | 'am';
+
+export const TRANSLATIONS = {
+  en: {
+    brandName: 'Dembel City Center',
+    tagline: 'The heartbeat of Addis Ababa’s premier shopping, dining & culture.',
+    nav: {
+      stores: 'Stores',
+      floors: 'Floors',
+      offers: 'Offers & Events',
+      tour: 'Virtual Tour',
+      visit: 'Visit',
+      careers: 'Careers',
+      register: 'Register',
+      admin: 'Admin',
+      verify: 'Verify'
+    },
+    hero: {
+      badge: 'Addis Ababa’s Landmark Destination',
+      title: 'Experience Elevated Shopping & Culture in Addis',
+      subtitle: 'Over 200 premier boutiques, authentic Ethiopian textiles, global culinary flavors, 4K cinema, and underground parking along Africa Avenue.',
+      searchPlaceholder: 'Find a store, restaurant, or service (e.g. coffee, shoes, phone)...',
+      searchButton: 'Search',
+      exploreStores: 'Explore Stores',
+      takeTour: 'Take the Virtual Tour',
+      popularSearches: 'Popular: Coffee, Nile Tech, Habesha Threads, Cinema, Opal Jewelry'
+    },
+    quickInfo: {
+      hoursTitle: 'Opening Hours',
+      hoursDesc: 'Mon – Sun: 8:30 AM – 9:30 PM',
+      parkingTitle: 'Secure Parking',
+      parkingDesc: 'Basement 500+ Bays • 24/7 Security',
+      locationTitle: 'Prime Location',
+      locationDesc: 'Africa Ave (Bole Rd), Olympia, Addis',
+      phoneTitle: 'Concierge & Info',
+      phoneDesc: '+251 11 551 0101'
+    },
+    sections: {
+      featuredStores: 'Featured Destinations',
+      featuredSubtitle: 'Handpicked boutiques, artisan cafes, and flagship tech',
+      viewAllStores: 'View All Stores',
+      offersTitle: "This Week's Offers",
+      offersSubtitle: 'Exclusive savings, bundle deals, and seasonal specials',
+      viewAllOffers: 'Explore All Offers',
+      eventsTitle: 'Upcoming Mall Events',
+      eventsSubtitle: 'Cultural exhibitions, family weekends, and live showcases',
+      viewAllEvents: 'View All Events',
+      tourTitle: 'Interactive 360° Virtual Tour',
+      tourSubtitle: 'Explore Dembel’s sunlit atrium, luxury corridors, and terrace from anywhere',
+      launchTour: 'Launch 360° Panorama',
+      planVisitTitle: 'Plan Your Visit',
+      planVisitSubtitle: 'Everything you need for a comfortable and effortless visit'
+    },
+    planVisit: {
+      hoursCardTitle: 'Center Hours & Timing',
+      hoursCardP1: 'Retail Boutiques: 8:30 AM – 9:00 PM',
+      hoursCardP2: 'Blue Nile Supermarket: 7:30 AM – 10:00 PM',
+      hoursCardP3: 'Lion City Cinema: 11:00 AM – 11:30 PM',
+      parkingCardTitle: 'Effortless Parking',
+      parkingCardP1: '500+ monitored underground spaces',
+      parkingCardP2: 'EV Charging bays & valet service',
+      parkingCardP3: 'Free with validated 300+ ETB receipts',
+      amenitiesCardTitle: 'Premium Amenities',
+      amenitiesCardP1: 'High-speed guest Wi-Fi on all levels',
+      amenitiesCardP2: 'Private prayer halls (Men & Women)',
+      amenitiesCardP3: 'Baby care & accessible elevators',
+      transitCardTitle: 'Easy Transit & Access',
+      transitCardP1: 'Olympia Light Rail Station (3 min walk)',
+      transitCardP2: '8 minutes from Bole Int’l Airport',
+      transitCardP3: 'Dedicated Ride/Taxi drop-off plaza'
+    },
+    footer: {
+      aboutTitle: 'About Dembel City Center',
+      aboutText: 'Addis Ababa’s historic yellow-and-blue landmark transformed into a state-of-the-art contemporary lifestyle, shopping, and entertainment destination.',
+      quickLinks: 'Quick Links',
+      categories: 'Categories',
+      newsletterTitle: 'Stay in the Loop',
+      newsletterSubtitle: 'Subscribe for VIP event invitations, exclusive store sales, and weekend cultural programs.',
+      newsletterPlaceholder: 'Enter your email address',
+      newsletterButton: 'Subscribe',
+      newsletterSuccess: 'Thank you! You are subscribed to Dembel VIP updates.',
+      conceptNote: 'Concept sample — not the official website. Created for demonstration and pitch purposes.',
+      allRights: 'All rights reserved.'
+    },
+    chat: {
+      title: 'Dembel Smart Concierge',
+      onlineStatus: 'Online • Addis Ababa Local Time',
+      welcome: 'Selam! 👋 I am the Dembel AI Concierge. How can I assist your visit today? Ask about stores, parking, opening hours, or special offers.',
+      placeholder: 'Ask a question (e.g. Where can I get coffee?)...',
+      suggestedQuestions: 'Suggested questions:',
+      typing: 'Concierge is typing...',
+      fallback: "I couldn't find an exact match for that question, but our customer concierge team is happy to assist you directly at +251 11 551 0101 or at the Ground Floor Concierge Desk.",
+      callTeam: 'Call Concierge',
+      openHours: 'View Hours'
+    },
+    filters: {
+      all: 'All',
+      search: 'Search stores...',
+      category: 'Category',
+      floor: 'Floor',
+      sortBy: 'Sort By',
+      nameAsc: 'Name (A – Z)',
+      nameDesc: 'Name (Z – A)',
+      rating: 'Highest Rated',
+      resultsCount: 'stores found'
+    }
+  },
+  am: {
+    brandName: 'ደመበል ሲቲ ሴንተር',
+    tagline: 'የአዲስ አበባ የቀዳሚ ግብይት፣ የምግብ እና የባህል መዳረሻ።',
+    nav: {
+      stores: 'መደብሮች',
+      floors: 'ፎቆች',
+      offers: 'ቅናሾችና ዝግጅቶች',
+      tour: 'ምናባዊ ጉብኝት',
+      visit: 'አድራሻና ጉብኝት',
+      careers: 'የስራ ዕድሎች',
+      register: 'ይመዝገቡ',
+      admin: 'አስተዳደር',
+      verify: 'የሰርተፊኬት ማረጋገጫ'
+    },
+    hero: {
+      badge: 'የአዲስ አበባ ታዋቂው የግብይት ማዕከል',
+      title: 'የላቀ የግብይትና የባህል ልምድ በደመበል',
+      subtitle: 'ከ200 በላይ የተመረጡ ሱቆች፣ የሀገር ባህል አልባሳት፣ ዓለም አቀፍ ምግቦች፣ ዘመናዊ ሲኒማ እና አስተማማኝ የመኪና ማቆሚያ በቦሌ መንገድ።',
+      searchPlaceholder: 'ሱቅ፣ ምግብ ቤት ወይም አገልግሎት ይፈልጉ (ለምሳሌ፡ ቡና፣ ጫማ፣ ስልክ)...',
+      searchButton: 'ፈልግ',
+      exploreStores: 'መደብሮችን ያስሱ',
+      takeTour: 'ምናባዊ ጉብኝት ያድርጉ',
+      popularSearches: 'ተወዳጅ ፍለጋዎች፡ ቡና፣ ናይል ቴክ፣ ሐበሻ ትሬድስ፣ ሲኒማ፣ ኦፓል ጌጣጌጥ'
+    },
+    quickInfo: {
+      hoursTitle: 'የስራ ሰዓት',
+      hoursDesc: 'ሰኞ – እሁድ፡ ከጠዋቱ 2:30 – ማታ 3:30',
+      parkingTitle: 'አስተማማኝ ፓርኪንግ',
+      parkingDesc: 'በምድር ቤት 500+ መኪኖች • 24/7 ጥበቃ',
+      locationTitle: 'ምርጥ መገኛ',
+      locationDesc: 'አፍሪካ ጎዳና (ቦሌ መንገድ)፣ ኦሊምፒያ',
+      phoneTitle: 'የመረጃ ዴስክ',
+      phoneDesc: '+251 11 551 0101'
+    },
+    sections: {
+      featuredStores: 'ተለይተው የቀረቡ መደብሮች',
+      featuredSubtitle: 'የተመረጡ ቡቲኮች፣ ባህላዊ ካፌዎች እና የቴክኖሎጂ ማዕከላት',
+      viewAllStores: 'ሁሉንም መደብሮች ይመልከቱ',
+      offersTitle: 'የዚህ ሳምንት ልዩ ቅናሾች',
+      offersSubtitle: 'ልዩ የዋጋ ቅናሾች፣ ስጦታዎች እና የበዓል ጥቅሎች',
+      viewAllOffers: 'ሁሉንም ቅናሾች ይመልከቱ',
+      eventsTitle: 'የሚመጡ የደመበል ዝግጅቶች',
+      eventsSubtitle: 'የባህል አውደ-ርዕዮች፣ የቤተሰብ ሳምንታት እና የቀጥታ ትርዒቶች',
+      viewAllEvents: 'ሁሉንም ዝግጅቶች ይመልከቱ',
+      tourTitle: 'በ360° ምናባዊ የቪዲዮ ጉብኝት',
+      tourSubtitle: 'የደመበልን ማዕከላዊ አዳራሽ፣ የፋሽን መደዳዎችና ሰገነቱን ከያሉበት በስልክዎ ይመልከቱ',
+      launchTour: '360° ጉብኝቱን ይጀምሩ',
+      planVisitTitle: 'ጉብኝትዎን ያቅዱ',
+      planVisitSubtitle: 'ምቹ እና አስደሳች ቆይታ እንዲኖርዎት የሚያግዝ መረጃ'
+    },
+    planVisit: {
+      hoursCardTitle: 'የማዕከሉ የስራ ሰዓት',
+      hoursCardP1: 'የችርቻሮ መደብሮች፡ 2:30 ጠዋት – 3:00 ማታ',
+      hoursCardP2: 'ብሉ ናይል ሱፐርማርኬት፡ 1:30 ጠዋት – 4:00 ማታ',
+      hoursCardP3: 'አንበሳ ሲቲ ሲኒማ፡ 5:00 ጠዋት – 5:30 ማታ',
+      parkingCardTitle: 'ምቹ የመኪና ማቆሚያ',
+      parkingCardP1: 'ከ500 በላይ መኪኖች ማቆሚያ ቦታ',
+      parkingCardP2: 'የኤሌክትሪክ መኪና ቻርጀር እና ቫሌት',
+      parkingCardP3: 'ከ300 ብር በላይ ሲገዙ ነጻ ማቆሚያ',
+      amenitiesCardTitle: 'ተጨማሪ አገልግሎቶች',
+      amenitiesCardP1: 'ፈጣን ነጻ ዋይፋይ በሁሉም ፎቆች',
+      amenitiesCardP2: 'የወንዶችና የሴቶች የተረጋጉ የጸሎት ክፍሎች',
+      amenitiesCardP3: 'የህፃናት ማቆያ እና ዘመናዊ ሊፍቶች',
+      transitCardTitle: 'ቀላል የትራንስፖርት መዳረሻ',
+      transitCardP1: 'ኦሊምፒያ ቀላል ባቡር ጣቢያ (3 ደቂቃ)',
+      transitCardP2: 'ከቦሌ ዓለም አቀፍ አውሮፕላን ማረፊያ 8 ደቂቃ',
+      transitCardP3: 'የራይድ እና ታክሲ መጫኛ/ማውረጃ አደባባይ'
+    },
+    footer: {
+      aboutTitle: 'ስለ ደመበል ሲቲ ሴንተር',
+      aboutText: 'ታሪካዊው ቢጫና ሰማያዊ የደመበል ህንፃ ወደ ዘመናዊ የግብይት፣ የምግብ እና የመዝናኛ ማዕከልነት ተቀይሮ አገልግሎት በመስጠት ላይ ይገኛል።',
+      quickLinks: 'ጠቃሚ ሊንኮች',
+      categories: 'ዘርፎች',
+      newsletterTitle: 'አዳዲስ መረጃዎችን ያግኙ',
+      newsletterSubtitle: 'ስለ ልዩ ቅናሾች፣ የበዓል ዝግጅቶች እና የቅዳሜ ፕሮግራሞች መረጃ እንዲደርስዎት ይመዝገቡ።',
+      newsletterPlaceholder: 'የኢሜል አድራሻዎን ያስገቡ',
+      newsletterButton: 'ይመዝገቡ',
+      newsletterSuccess: 'እናመሰግናለን! ለደመበል ልዩ መረጃዎች በተሳካ ሁኔታ ተመዝግበዋል።',
+      conceptNote: 'የፅንሰ-ሀሳብ ማሳያ ናሙና — ይፋዊው ድረ-ገጽ አይደለም። ለቀረጻ እና ለገላጭ ማሳያ ዓላማ የተዘጋጀ።',
+      allRights: 'መብቱ በህግ የተጠበቀ ነው።'
+    },
+    chat: {
+      title: 'የደመበል ረዳት',
+      onlineStatus: 'በመስመር ላይ • አዲስ አበባ ሰዓት',
+      welcome: 'ሰላም! 👋 እኔ የደመበል ረዳት ነኝ። ዛሬ በምን ልርዳዎት? ስለ መደብሮች፣ የመኪና ማቆሚያ፣ የስራ ሰዓት ወይም ቅናሾች መጠየቅ ይችላሉ።',
+      placeholder: 'ጥያቄዎን እዚህ ይጻፉ (ለምሳሌ፡ ቡና የት አለ?)...',
+      suggestedQuestions: 'የተለመዱ ጥያቄዎች፡',
+      typing: 'ረዳቱ በመመለስ ላይ ነው...',
+      fallback: 'ለዚህ ጥያቄ መልስ ማግኘት አልቻልኩም። እባክዎ በስልክ ቁጥር +251 11 551 0101 በመደወል ወይም በዋናው አዳራሽ የመረጃ ዴስክ በመገኘት ያግኙን።',
+      callTeam: 'ይደውሉ',
+      openHours: 'የስራ ሰዓት'
+    },
+    filters: {
+      all: 'ሁሉም',
+      search: 'መደብሮችን ይፈልጉ...',
+      category: 'ዘርፍ',
+      floor: 'ፎቅ',
+      sortBy: 'አደራደር',
+      nameAsc: 'ስም (ከሀ – ፐ)',
+      nameDesc: 'ስም (ከፐ – ሀ)',
+      rating: 'ከፍተኛ ደረጃ',
+      resultsCount: 'መደብሮች ተገኝተዋል'
+    }
+  }
+};
