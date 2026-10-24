@@ -180,7 +180,7 @@ export default function AiAssistant() {
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Open Dembel AI Concierge"
-          className="relative group p-4 rounded-full bg-gradient-to-r from-[#031955] via-[#0E4C92] to-[#1882B2] text-white shadow-2xl hover:shadow-[#0E4C92]/40 hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-[#C9A24B]/60 focus:outline-none focus:ring-4 focus:ring-[#C9A24B]/40"
+          className="relative group p-4 rounded-full bg-gradient-to-r from-[#12427D] via-[#1E5EA8] to-[#2193C4] text-white shadow-2xl hover:shadow-[#1E5EA8]/40 hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-[#C9A24B]/60 focus:outline-none focus:ring-4 focus:ring-[#C9A24B]/40"
         >
           {isOpen ? (
             <X className="w-6 h-6" />
@@ -189,7 +189,7 @@ export default function AiAssistant() {
               <MessageSquare className="w-6 h-6" />
               <span className="absolute -top-1 -right-1 flex h-4 w-4">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C9A24B] opacity-75" />
-                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#C9A24B] text-[10px] text-[#031955] font-black items-center justify-center">
+                <span className="relative inline-flex rounded-full h-4 w-4 bg-[#C9A24B] text-[10px] text-[#12427D] font-black items-center justify-center">
                   1
                 </span>
               </span>
@@ -198,7 +198,7 @@ export default function AiAssistant() {
 
           {/* Tooltip on hover */}
           {!isOpen && (
-            <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-[#031955] text-white text-xs font-semibold whitespace-nowrap shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity border border-white/10 hidden sm:block">
+            <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-[#12427D] text-white text-xs font-semibold whitespace-nowrap shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity border border-white/10 hidden sm:block">
               {language === 'am' ? 'የደመበል ረዳት' : 'Ask Dembel AI Concierge'}
             </span>
           )}
@@ -213,7 +213,7 @@ export default function AiAssistant() {
           className="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-32px)] sm:w-[420px] max-h-[620px] h-[82vh] bg-white rounded-2xl shadow-2xl border border-slate-200/80 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-6 duration-300"
         >
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#031955] via-[#0E4C92] to-[#031955] p-4 text-white flex items-center justify-between border-b border-white/10">
+          <div className="bg-gradient-to-r from-[#12427D] via-[#1E5EA8] to-[#12427D] p-4 text-white flex items-center justify-between border-b border-white/10">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-[#C9A24B]/20 border border-[#C9A24B]/60 flex items-center justify-center text-[#DFBE72]">
                 <Bot className="w-5 h-5 text-[#DFBE72]" />

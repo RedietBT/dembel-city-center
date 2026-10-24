@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-navy: #031955;
-  --color-brand-royal: #0E4C92;
-  --color-brand-teal: #1882B2;
+  --color-brand-navy: #12427D;
+  --color-brand-royal: #1E5EA8;
+  --color-brand-teal: #2193C4;
   --color-brand-gold: #C9A24B;
   --color-brand-gold-light: #DFBE72;
-  --color-brand-bg: #F6F8FC;
+  --color-brand-bg: #F8FAFC;
   --color-brand-card: #FFFFFF;
-  --color-brand-text: #1B2638;
+  --color-brand-text: #1E293B;
   --color-brand-muted: #64748B;
   --color-brand-border: #E2E8F0;
   
@@ -16,8 +16,8 @@
 }
 
 :root {
-  --background: #F6F8FC;
-  --foreground: #1B2638;
+  --background: #F8FAFC;
+  --foreground: #1E293B;
 }
 
 body {
@@ -51,17 +51,17 @@ html {
 
 /* Glassmorphism helpers */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .glass-dark {
-  background: rgba(3, 25, 85, 0.85);
+  background: rgba(18, 66, 125, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .gold-gradient {
@@ -69,13 +69,13 @@ html {
 }
 
 .navy-gradient {
-  background: linear-gradient(135deg, #031955 0%, #0E4C92 100%);
+  background: linear-gradient(135deg, #12427D 0%, #1E5EA8 100%);
 }
 
-.hero-gradient {
-  background: radial-gradient(circle at 80% 20%, rgba(24, 130, 178, 0.25) 0%, transparent 50%),
-              radial-gradient(circle at 20% 80%, rgba(201, 162, 75, 0.15) 0%, transparent 40%),
-              linear-gradient(180deg, #031955 0%, #092C6E 100%);
+.hero-gradient-light {
+  background: radial-gradient(circle at 80% 20%, rgba(33, 147, 196, 0.12) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, rgba(201, 162, 75, 0.1) 0%, transparent 50%),
+              linear-gradient(180deg, #F8FAFC 0%, #EFF4FA 100%);
 }
 
 /* Subtle badge pulse */
