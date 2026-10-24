@@ -110,6 +110,11 @@ export default function Footer() {
                   {t.nav.careers}
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="hover:text-[#DFBE72] transition-colors">
+                  {t.nav.contact}
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -15,7 +15,8 @@ import {
   Briefcase,
   UserPlus,
   Sparkles,
-  Globe
+  Globe,
+  Phone
 } from 'lucide-react';
 
 export default function Header() {
@@ -38,7 +39,8 @@ export default function Header() {
     { href: '/offers', label: t.nav.offers, icon: Tag },
     { href: '/tour', label: t.nav.tour, icon: Compass },
     { href: '/visit', label: t.nav.visit, icon: MapPin },
-    { href: '/careers', label: t.nav.careers, icon: Briefcase }
+    { href: '/careers', label: t.nav.careers, icon: Briefcase },
+    { href: '/contact', label: t.nav.contact, icon: Phone }
   ];
 
   const isActive = (path: string) => {

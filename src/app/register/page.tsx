@@ -16,7 +16,13 @@ import {
   CreditCard,
   QrCode,
   ArrowRight,
-  Gift
+  Gift,
+  MapPin,
+  Clock,
+  Car,
+  Compass,
+  Train,
+  Check
 } from 'lucide-react';
 
 export default function RegisterPage() {
@@ -78,7 +84,7 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-[#F6F8FC] py-10 sm:py-14">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Page Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -325,6 +331,122 @@ export default function RegisterPage() {
 
           </div>
         )}
+
+        {/* MAP & VIP CONCIERGE PICKUP SECTION */}
+        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0E4C92] uppercase tracking-wider mb-1">
+                <MapPin className="w-3.5 h-3.5 text-[#C9A24B]" />
+                <span>Location & Card Collection</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-extrabold text-[#031955]">
+                {language === 'am' ? 'የቪአይፒ ካርድ መውሰጃ እና የደመበል ካርታ' : 'VIP Concierge Desk & Location Map'}
+              </h2>
+            </div>
+            
+            <Link
+              href="/floors?floor=ground"
+              className="px-4 py-2 rounded-xl bg-slate-100 hover:bg-[#031955] hover:text-white text-[#031955] text-xs font-bold transition-all flex items-center gap-1.5 shrink-0"
+            >
+              <Compass className="w-3.5 h-3.5" />
+              <span>Ground Floor Blueprint</span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            {/* Map Info Strip (5 cols) */}
+            <div className="md:col-span-5 space-y-3.5 text-xs">
+              <div className="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 space-y-1">
+                <span className="font-extrabold text-[#031955] text-sm block">
+                  Ground Floor Central Concierge
+                </span>
+                <p className="text-slate-600 leading-relaxed">
+                  Present your digital QR pass at the central concierge counter in the main atrium to receive your official plastic RFID membership card or to validate your parking pass.
+                </p>
+              </div>
+
+              <div className="space-y-2 text-slate-700">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-[#C9A24B] shrink-0" />
+                  <span>Africa Avenue (Bole Road), Olympia, Addis Ababa</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-[#0E4C92] shrink-0" />
+                  <span>Desk open daily: 8:30 AM – 9:30 PM</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Car className="w-4 h-4 text-[#1882B2] shrink-0" />
+                  <span>Basement Parking: 2 hours free for VIP members</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Train className="w-4 h-4 text-[#031955] shrink-0" />
+                  <span>Olympia LRT Station: 3-minute walking distance</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Interactive Visual Map Viewport (7 cols) */}
+            <div className="md:col-span-7 relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-100">
+              {/* Map Illustration with SVG Grid and Landmarks */}
+              <svg viewBox="0 0 500 300" className="w-full h-full select-none bg-[#EBF1F8]">
+                {/* Streets */}
+                <path d="M 0 160 L 500 160" stroke="#CBD5E1" strokeWidth="48" fill="none" />
+                <path d="M 0 160 L 500 160" stroke="#F8FAFC" strokeWidth="2" strokeDasharray="10 8" fill="none" />
+                <text x="250" y="165" textAnchor="middle" fill="#64748B" fontSize="11" fontWeight="bold" letterSpacing="2">
+                  AFRICA AVENUE (BOLE ROAD)
+                </text>
+
+                <path d="M 120 0 L 120 300" stroke="#CBD5E1" strokeWidth="32" fill="none" />
+                <text x="120" y="80" textAnchor="middle" fill="#94A3B8" fontSize="9" fontWeight="bold" transform="rotate(-90 120 80)">
+                  OLYMPIA CONCOURSE
+                </text>
+
+                {/* Dembel Mall Footprint */}
+                <rect x="220" y="30" width="230" height="100" rx="14" fill="#031955" stroke="#C9A24B" strokeWidth="3" />
+                <text x="335" y="65" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="bold">
+                  DEMBEL CITY CENTER
+                </text>
+                <text x="335" y="85" textAnchor="middle" fill="#DFBE72" fontSize="9" fontWeight="bold">
+                  ★ VIP CONCIERGE DESK (GROUND ATRIUM)
+                </text>
+
+                {/* Parking Entry Ramp */}
+                <rect x="230" y="140" width="70" height="16" rx="4" fill="#1882B2" />
+                <text x="265" y="152" textAnchor="middle" fill="#FFFFFF" fontSize="8" fontWeight="bold">
+                  PARKING IN
+                </text>
+
+                {/* Metro LRT Station Marker */}
+                <circle cx="80" cy="160" r="14" fill="#10B981" stroke="#FFFFFF" strokeWidth="2" />
+                <text x="80" y="164" textAnchor="middle" fill="#FFFFFF" fontSize="10" fontWeight="bold">
+                  LRT
+                </text>
+                <text x="80" y="190" textAnchor="middle" fill="#065F46" fontSize="8" fontWeight="bold">
+                  Olympia Station
+                </text>
+
+                {/* Pin on Dembel */}
+                <circle cx="335" cy="108" r="8" fill="#C9A24B" stroke="#FFFFFF" strokeWidth="2" />
+              </svg>
+
+              {/* Map Floating Control Overlay */}
+              <div className="absolute bottom-3 right-3 flex items-center gap-2">
+                <a
+                  href="https://maps.google.com/?q=Dembel+City+Center+Addis+Ababa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md text-[#031955] text-xs font-bold hover:bg-white shadow-md flex items-center gap-1.5 transition-all"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-[#0E4C92]" />
+                  <span>Google Maps</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     </div>

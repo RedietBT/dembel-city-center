@@ -13,7 +13,8 @@ export const TRANSLATIONS = {
       careers: 'Careers',
       register: 'Register',
       admin: 'Admin',
-      verify: 'Verify'
+      verify: 'Verify',
+      contact: 'Contact'
     },
     hero: {
       badge: 'Addis Ababa’s Landmark Destination',
@@ -117,7 +118,8 @@ export const TRANSLATIONS = {
       careers: 'የስራ ዕድሎች',
       register: 'ይመዝገቡ',
       admin: 'አስተዳደር',
-      verify: 'የሰርተፊኬት ማረጋገጫ'
+      verify: 'የሰርተፊኬት ማረጋገጫ',
+      contact: 'ያግኙን'
     },
     hero: {
       badge: 'የአዲስ አበባ ታዋቂው የግብይት ማዕከል',
