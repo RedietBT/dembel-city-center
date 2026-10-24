@@ -59,20 +59,20 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-6">
           
-          {/* Logo with elegant lighter blue & gold */}
+          {/* Logo with elegant navy & gold */}
           <Link
             href="/"
             className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#C9A24B] rounded-xl p-1"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#12427D] to-[#1E5EA8] p-0.5 shadow-xs transition-transform duration-200 group-hover:scale-105">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#031955] to-[#0E4C92] p-0.5 shadow-xs transition-transform duration-200 group-hover:scale-105">
               <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center">
-                <span className="font-black text-sm tracking-wider text-[#12427D]">
+                <span className="font-black text-sm tracking-wider text-[#031955]">
                   DCC
                 </span>
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight leading-tight text-[#12427D] group-hover:text-[#1E5EA8] transition-colors">
+              <span className="font-extrabold text-base sm:text-lg tracking-tight leading-tight text-[#031955] group-hover:text-[#0E4C92] transition-colors">
                 {language === 'am' ? 'ደመበል ሲቲ ሴንተር' : 'Dembel City Center'}
               </span>
               <span className="text-[10px] uppercase tracking-widest text-[#C9A24B] font-semibold hidden sm:inline">
@@ -91,8 +91,8 @@ export default function Header() {
                   href={item.href}
                   className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm transition-all duration-150 ${
                     active
-                      ? 'text-[#12427D] font-extrabold bg-blue-50/80 shadow-2xs'
-                      : 'text-slate-600 hover:text-[#12427D] hover:bg-slate-50 font-medium'
+                      ? 'text-[#031955] font-extrabold bg-blue-50/80 shadow-2xs'
+                      : 'text-slate-600 hover:text-[#031955] hover:bg-slate-50 font-medium'
                   }`}
                 >
                   {item.label}
@@ -110,7 +110,7 @@ export default function Header() {
                 onClick={() => setLanguage('en')}
                 className={`px-3 py-1 rounded-full transition-all duration-150 ${
                   language === 'en'
-                    ? 'bg-white text-[#12427D] shadow-xs font-bold'
+                    ? 'bg-white text-[#031955] shadow-xs font-bold'
                     : 'text-slate-500 hover:text-slate-800'
                 }`}
                 aria-label="Switch to English"
@@ -122,7 +122,7 @@ export default function Header() {
                 onClick={() => setLanguage('am')}
                 className={`px-3 py-1 rounded-full transition-all duration-150 ${
                   language === 'am'
-                    ? 'bg-white text-[#12427D] shadow-xs font-bold'
+                    ? 'bg-white text-[#031955] shadow-xs font-bold'
                     : 'text-slate-500 hover:text-slate-800'
                 }`}
                 aria-label="Switch to Amharic"
@@ -134,7 +134,7 @@ export default function Header() {
             {/* Simple VIP Register Link */}
             <Link
               href="/register"
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#12427D] hover:bg-[#1E5EA8] text-white shadow-xs active:scale-95 transition-all duration-150"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#031955] hover:bg-[#0E4C92] text-white shadow-xs active:scale-95 transition-all duration-150"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#DFBE72]" />
               <span>{t.nav.register}</span>

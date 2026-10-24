@@ -28,9 +28,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#12427D] text-slate-200 border-t border-white/10 pt-16 pb-12 mt-20 relative overflow-hidden">
+    <footer className="bg-[#031955] text-slate-200 border-t border-white/10 pt-16 pb-12 mt-20 relative overflow-hidden">
       {/* Subtle background ambient glows */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#1E5EA8]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0E4C92]/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-10 w-80 h-80 bg-[#C9A24B]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#C9A24B] to-[#DFBE72] p-[2px]">
-                <div className="w-full h-full bg-[#12427D] rounded-[10px] flex items-center justify-center">
+                <div className="w-full h-full bg-[#031955] rounded-[10px] flex items-center justify-center">
                   <span className="font-extrabold text-lg text-[#C9A24B]">DCC</span>
                 </div>
               </div>

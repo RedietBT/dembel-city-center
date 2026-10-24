@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-navy: #12427D;
-  --color-brand-royal: #1E5EA8;
-  --color-brand-teal: #2193C4;
+  --color-brand-navy: #031955;
+  --color-brand-royal: #0E4C92;
+  --color-brand-teal: #1882B2;
   --color-brand-gold: #C9A24B;
   --color-brand-gold-light: #DFBE72;
-  --color-brand-bg: #F8FAFC;
+  --color-brand-bg: #F6F8FC;
   --color-brand-card: #FFFFFF;
-  --color-brand-text: #1E293B;
+  --color-brand-text: #1B2638;
   --color-brand-muted: #64748B;
   --color-brand-border: #E2E8F0;
   
@@ -16,8 +16,8 @@
 }
 
 :root {
-  --background: #F8FAFC;
-  --foreground: #1E293B;
+  --background: #F6F8FC;
+  --foreground: #1B2638;
 }
 
 body {
@@ -58,7 +58,7 @@ html {
 }
 
 .glass-dark {
-  background: rgba(18, 66, 125, 0.88);
+  background: rgba(3, 25, 85, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -69,13 +69,7 @@ html {
 }
 
 .navy-gradient {
-  background: linear-gradient(135deg, #12427D 0%, #1E5EA8 100%);
-}
-
-.hero-gradient-light {
-  background: radial-gradient(circle at 80% 20%, rgba(33, 147, 196, 0.12) 0%, transparent 60%),
-              radial-gradient(circle at 20% 80%, rgba(201, 162, 75, 0.1) 0%, transparent 50%),
-              linear-gradient(180deg, #F8FAFC 0%, #EFF4FA 100%);
+  background: linear-gradient(135deg, #031955 0%, #0E4C92 100%);
 }
 
 /* Subtle badge pulse */

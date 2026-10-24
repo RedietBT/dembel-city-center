@@ -100,10 +100,10 @@ export default function HeroCarousel() {
     <section
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="relative overflow-hidden bg-slate-100 min-h-[500px] sm:min-h-[560px] lg:min-h-[620px] flex items-center justify-center select-none"
+      className="relative overflow-hidden bg-slate-950 min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex items-center justify-center select-none"
       aria-label="Dembel City Center Hero"
     >
-      {/* Background Image Carousel with Light, Natural Vignette */}
+      {/* Background Image Carousel with Proportionate Balanced Cinematic Overlays */}
       {HERO_SLIDES.map((s, idx) => (
         <div
           key={s.id}
@@ -120,41 +120,41 @@ export default function HeroCarousel() {
             sizes="100vw"
             className="object-cover object-center"
           />
-          {/* Light, Airy Gradient Overlays: Bright left tint for crisp legibility, airy right side showcasing natural daylight photography */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-white/40" />
+          {/* Proportionate Vignette: Rich text readability on the left without over-darkening the natural daylight photography on the right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#031955]/85 via-[#031955]/55 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/30" />
         </div>
       ))}
 
       {/* Subtle ambient light glow */}
-      <div className="absolute top-1/3 left-1/4 w-[450px] h-[450px] bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-amber-100/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[450px] h-[450px] bg-[#0E4C92]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-[#C9A24B]/15 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Main Hero Content - Clean, Airy, No Huge Search Bar */}
+      {/* Main Hero Content - Clean, Proportionate, Elegant */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-16 sm:py-20 w-full">
         <div className="max-w-2xl space-y-6">
           
           {/* Badge */}
           <div className="flex items-center gap-2">
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-50/90 border border-blue-200/80 text-xs font-bold text-[#12427D] shadow-2xs animate-soft-pulse">
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs font-bold text-[#DFBE72] shadow-sm animate-soft-pulse">
               <Sparkles className="w-3.5 h-3.5 text-[#C9A24B]" />
               <span>{language === 'am' ? slide.badge.am : slide.badge.en}</span>
             </div>
-            <span className="text-[11px] font-semibold text-slate-600 bg-white/80 backdrop-blur-xs px-3 py-1 rounded-full border border-slate-200/80 shadow-2xs hidden sm:inline">
+            <span className="text-[11px] font-semibold text-slate-200 bg-black/40 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15 shadow-2xs hidden sm:inline">
               {language === 'am' ? slide.tag.am : slide.tag.en}
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#12427D] tracking-tight leading-[1.12]">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12]">
             {language === 'am' ? slide.title.am : slide.title.en}{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E5EA8] via-[#C9A24B] to-[#12427D] block sm:inline">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#DFBE72] via-[#C9A24B] to-amber-200 block sm:inline">
               {language === 'am' ? slide.highlight.am : slide.highlight.en}
             </span>
           </h1>
 
           {/* Clean Subtitle */}
-          <p className="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-xl">
+          <p className="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed font-normal max-w-xl drop-shadow-xs">
             {language === 'am' ? slide.subtitle.am : slide.subtitle.en}
           </p>
 
@@ -162,26 +162,26 @@ export default function HeroCarousel() {
           <div className="flex flex-col sm:flex-row items-center gap-3.5 pt-2">
             <Link
               href="/stores"
-              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs sm:text-sm bg-[#12427D] hover:bg-[#1E5EA8] text-white shadow-xs active:scale-95 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-[#C9A24B] to-[#DFBE72] text-[#031955] shadow-lg hover:brightness-105 active:scale-95 transition-all flex items-center justify-center gap-2"
             >
-              <ShoppingBag className="w-4 h-4 text-[#DFBE72]" />
+              <ShoppingBag className="w-4 h-4 text-[#031955]" />
               <span>{t.hero.exploreStores}</span>
             </Link>
 
             <Link
               href="/tour"
-              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs sm:text-sm bg-white hover:bg-slate-50 border border-slate-200 text-[#12427D] shadow-xs active:scale-95 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm bg-white/15 hover:bg-white/25 border border-white/30 text-white backdrop-blur-md shadow-sm active:scale-95 transition-all flex items-center justify-center gap-2"
             >
-              <Compass className="w-4 h-4 text-[#C9A24B]" />
+              <Compass className="w-4 h-4 text-[#DFBE72]" />
               <span>{t.hero.takeTour}</span>
             </Link>
 
             <Link
               href="/contact"
-              className="w-full sm:w-auto px-5 py-3 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#12427D] flex items-center justify-center gap-1.5 transition-colors"
+              className="w-full sm:w-auto px-5 py-3.5 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors"
             >
               <span>{language === 'am' ? 'ያግኙን' : 'Contact Us'}</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <ArrowRight className="w-3.5 h-3.5 text-[#DFBE72]" />
             </Link>
           </div>
 
@@ -193,7 +193,7 @@ export default function HeroCarousel() {
         type="button"
         onClick={prevSlide}
         aria-label="Previous slide"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-white/80 hover:bg-white text-slate-700 hover:text-[#12427D] backdrop-blur-md border border-slate-200/80 shadow-xs transition-all active:scale-90 hidden sm:flex items-center justify-center"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/40 hover:bg-[#031955] text-white/90 hover:text-white backdrop-blur-md border border-white/20 shadow-md transition-all active:scale-90 hidden sm:flex items-center justify-center"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
@@ -202,13 +202,13 @@ export default function HeroCarousel() {
         type="button"
         onClick={nextSlide}
         aria-label="Next slide"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-white/80 hover:bg-white text-slate-700 hover:text-[#12427D] backdrop-blur-md border border-slate-200/80 shadow-xs transition-all active:scale-90 hidden sm:flex items-center justify-center"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/40 hover:bg-[#031955] text-white/90 hover:text-white backdrop-blur-md border border-white/20 shadow-md transition-all active:scale-90 hidden sm:flex items-center justify-center"
       >
         <ChevronRight className="w-5 h-5" />
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2 bg-white/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-200/80 shadow-xs">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2 bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 shadow-md">
         {HERO_SLIDES.map((s, idx) => (
           <button
             key={s.id}
@@ -217,8 +217,8 @@ export default function HeroCarousel() {
             aria-label={`Go to slide ${idx + 1}`}
             className={`transition-all rounded-full ${
               idx === currentSlide
-                ? 'w-7 h-2 bg-[#12427D]'
-                : 'w-2 h-2 bg-slate-300 hover:bg-slate-400'
+                ? 'w-7 h-2 bg-gradient-to-r from-[#C9A24B] to-[#DFBE72]'
+                : 'w-2 h-2 bg-white/40 hover:bg-white/70'
             }`}
           />
         ))}
